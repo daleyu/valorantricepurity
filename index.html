@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox Example</title>
+</head>
+<body style="background-color: beige;">
+    <h1>The Official Valorant Rice Purity Test</h1>
+    <form action="/submit-hobbies" method="post">
+        <label for="q1">
+            <input type="checkbox" id="q1" value="Have you played Valorant?">
+            Have you played Valorant?
+        </label><br>
+        <label for="q2">
+            <input type="checkbox" id="q2" value="Have you won a match in Valorant?">
+            Have you won a match in Valorant?
+        </label><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class = "counter">
+        Checkboxes Checked: <span id="counter">0</span>
+    </div>
+    <script>
+        function counter(){
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            let count = 0;
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function(){
+                    if(this.checked){
+                        count++;
+                    }
+                    document.getElementById('counter').innerText = count;
+                });
+            });
+        }
+        function submit(){
+            alert('You have checked ' + count + ' checkboxes');
+        }
+    </script>
+</body>
+</html>
+
