@@ -1,6 +1,7 @@
 body {
     position: relative;
     background-color: #FBEFCB;
+    font-family: Arial, sans-serif;
 }
 
 body::before {
@@ -21,7 +22,18 @@ body::before {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
 h1 {
@@ -75,7 +87,6 @@ button {
     margin-top: 20px;
 }
 
-/* Add these styles to your existing CSS */
 #resultsPage {
     text-align: center;
 }
@@ -89,12 +100,4 @@ button {
 
 .intro {
     font-style: italic;
-}
-
-.header-image {
-    width: 100%;
-    max-width: 800px; /* Adjust this value based on your design preferences */
-    height: auto;
-    margin: 20px auto;
-    display: block;
 }
