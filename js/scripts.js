@@ -99,7 +99,6 @@ const questions = [
     "Do you want to steal Kyedae from Tenz?",
     "If you are stuck in Iron do you have a disability?",
    "Was Sinatraa innocent (yes save my boy Jay Won!)",
-   
 ];
 
 function createQuestions() {
