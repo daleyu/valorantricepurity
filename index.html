@@ -7,138 +7,76 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Bro Purity Test</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id ="questionsPage" class="container">
-        <header>
-            <img src="tech_bro.png" alt="Tech Bro Purity Test" class="header-image">
-        </header>
-        <p class="intro">The Tech Bro Purity Test has historically served as a rite of passage in Silicon Valley. It's a voluntary opportunity for startup founders to bond, and for engineers to track the evolution of their tech career.</p>
-        <p class="caution">Caution: This is not a to-do list. Completion of all items on this test will likely result in burnout.</p>
-        <p class="instruction">Click on every item you have done. MVC stands for Model-View-Controller.</p>
-        <form id="purityTest">
-            <!-- Questions will be inserted here dynamically -->
-        </form>
-        <button onclick="calculateScore()">Calculate Score</button>
-        <div id="result"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Official Valorant Rice Purity Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="questionsPage" class="container">
+      <header>
+        <img
+          src="tech_bro.png"
+          alt="Tech Bro Purity Test"
+          class="header-image"
+        />
+      </header>
+      <p class="intro">
+        The Tech Bro Purity Test has historically served as a rite of passage in
+        Silicon Valley. It's a voluntary opportunity for startup founders to
+        bond, and for engineers to track the evolution of their tech career.
+      </p>
+      <p class="caution">
+        Caution: This is not a to-do list. Completion of all items on this test
+        will likely result in burnout.
+      </p>
+      <p class="instruction">
+        Click on every item you have done. MVC stands for Model-View-Controller.
+      </p>
+      <form id="purityTest">
+        <label for="q1">
+          <input type="checkbox" id="q1" value="1" />
+          Have you played Valorant? </label
+        ><br />
+        <label for="q2">
+          <input type="checkbox" id="q2" value="2" />
+          Did you get the Valorant Beta key? </label
+        ><br />
+        <label for="q2">
+          <input type="checkbox" id="q3" value="3" />
+          Have you played 5 Dualists in Competitive? </label
+        ><br />
+        <label for="q2">
+          <input type="checkbox" id="q4" value="4" />
+          Have you ever instalocked Reyna or Jett? </label
+        ><br />
+        <label for="q2">
+          <input type="checkbox" id="q3" value="3" />
+          Have you played 5 Dualists in Competitive? </label
+        ><br />
+        <label for="q2">
+          <input type="checkbox" id="q3" value="3" />
+          Have you played 5 Dualists in Competitive? </label
+        ><br />
+        <!-- Questions will be inserted here dynamically -->
+      </form>
+      <button onclick="calculateScore()">Calculate Score</button>
+      <div id="result"></div>
     </div>
-    <div id="resultsPage" class="container" style="display: none;">
-        <h1><span>The Official</span> Tech Bro Purity Test</h1>
-        <p class="subtitle">Have you ever...</p>
-        <h2>Your score:</h2>
-        <div id="scoreDisplay"></div>
+    <div id="resultsPage" class="container" style="display: none">
+      <h1><span>The Official</span> Tech Bro Purity Test</h1>
+      <p class="subtitle">Have you ever...</p>
+      <h2>Your score:</h2>
+      <div id="scoreDisplay"></div>
     </div>
     <script src="script.js"></script>
     <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-      </script>
-      <script defer src="/_vercel/insights/script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Checkbox Example</title>
-</head>
-<body style="background-color: beige;">
-    <h1>The Official Valorant Rice Purity Test</h1>
-    <form action="/submit-hobbies" method="post">
-        <label for="q1">
-            <input type="checkbox" id="q1" value="1">
-            Have you played Valorant?
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q2" value="2">
-            Did you get the Valorant Beta key?
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q4" value="4">
-            Have you ever instalocked Reyna or Jett?
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-        <var> <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-        <label for="q2">
-            <input type="checkbox" id="q3" value="3">
-            Have you played 5 Dualists in Competitive?
-
-        </label><br>
-    </var>
-        <input type="submit" value="Submit">
-    </form>
-
-    <div class = "counter">
-        Checkboxes Checked: <span id="counter">0</span>
-    </div>
-    <script>
-        function counter(){
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            let count = 0;
-            checkboxes.forEach(checkbox => {
-                checkbox.addEventListener('change', function(){
-                    if(this.checked){
-                        count++;
-                    }
-                    document.getElementById('counter').innerText = count;
-                });
-            });
-        }
-        function submit(){
-            alert('You have checked ' + count + ' checkboxes');
-        }
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
     </script>
-</body>
+  </body>
 </html>
-
