@@ -6,6 +6,41 @@
         -->
 
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Bro Purity Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id ="questionsPage" class="container">
+        <header>
+            <img src="tech_bro.png" alt="Tech Bro Purity Test" class="header-image">
+        </header>
+        <p class="intro">The Tech Bro Purity Test has historically served as a rite of passage in Silicon Valley. It's a voluntary opportunity for startup founders to bond, and for engineers to track the evolution of their tech career.</p>
+        <p class="caution">Caution: This is not a to-do list. Completion of all items on this test will likely result in burnout.</p>
+        <p class="instruction">Click on every item you have done. MVC stands for Model-View-Controller.</p>
+        <form id="purityTest">
+            <!-- Questions will be inserted here dynamically -->
+        </form>
+        <button onclick="calculateScore()">Calculate Score</button>
+        <div id="result"></div>
+    </div>
+    <div id="resultsPage" class="container" style="display: none;">
+        <h1><span>The Official</span> Tech Bro Purity Test</h1>
+        <p class="subtitle">Have you ever...</p>
+        <h2>Your score:</h2>
+        <div id="scoreDisplay"></div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      </script>
+      <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Checkbox Example</title>

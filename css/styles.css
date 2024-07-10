@@ -1,0 +1,100 @@
+body {
+    position: relative;
+    background-color: #FBEFCB;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(allbirds.png);
+    background-repeat: repeat;
+    background-size: 200px;
+    background-position: center;
+    opacity: 0.1; /* Adjust opacity as needed */
+    z-index: -1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 5px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 10px 0;
+}
+
+h1 span {
+    font-size: 24px;
+    color: #8b0000;
+    display: block;
+}
+
+.subtitle, .intro, .caution, .instruction {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.caution {
+    font-weight: bold;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: Times New Roman, serif;
+}
+
+#result {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Add these styles to your existing CSS */
+#resultsPage {
+    text-align: center;
+}
+
+#scoreDisplay {
+    font-size: 100px;
+    color: #ff0000;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.intro {
+    font-style: italic;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 800px; /* Adjust this value based on your design preferences */
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
