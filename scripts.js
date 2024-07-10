@@ -131,6 +131,25 @@ function calculateScore() {
     // Display the score
     const scoreDisplay = document.getElementById('scoreDisplay');
     scoreDisplay.textContent = score;
+
+    //display the message
+    const messageDisplay = document.getElementById('messageDisplay');
+    messageDisplay.textContent = getMessageBasedOnScore(score);
 }
+
+function getMessageBasedOnScore(score) {
+    if (score > 90) {
+        return "pocket Sage Casual";
+    } else if (score > 70) {
+        return "Valorant Accent Developing";
+    } else if (score > 50) {
+        return "Humble King let's you take this spot";
+    } else if (score > 30) {
+        return "Smeagol, is that you?";
+    } else {
+        return "You need to get out more. Seriously. Step Outside. You aren't gonna get Kyedae like this.";
+    }
+}
+
 
 createQuestions();

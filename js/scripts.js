@@ -131,6 +131,23 @@ function calculateScore() {
     // Display the score
     const scoreDisplay = document.getElementById('scoreDisplay');
     scoreDisplay.textContent = score;
+
+    //display the message
+    const messageDisplay = document.getElementById('messageDisplay');
+    messageDisplay.textContent = getMessageBasedOnScore(score);
 }
+
+function getMessageBasedOnScore(score) {
+    if (score > 90) {
+        return "pocket Sage Casual";
+    } else if (score > 70) {
+        return "Valorant Accent Developing";
+    } else if (score > 50) {
+        return "Humble King let's you take this spot";
+    } else {
+        return "Smeagol, is that you?";
+    }
+}
+
 
 createQuestions();
