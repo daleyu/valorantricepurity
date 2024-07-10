@@ -1,6 +1,7 @@
 const questions = [
     "Have you ever played Valorant?",
-    "Have you ever played a Valorant Ten Man?"
+    "Have you ever played a Valorant Ten Man?",
+    "Have you ever played a Valorant PUG?",
 ];
 
 function createQuestions() {
