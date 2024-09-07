@@ -60,7 +60,7 @@ const questions = [
     "Have you ever received nudes from someone you met in Valorant?",
     "Have you ever cosplayed as a Valorant character?",
     "Do you have the Valorant accent?",
-    "Pissed yourself mid game cause no pp time?",
+    "Held in your pee mid game cause you couldn't take a break?",
     "Have you ever thrown a game on purpose?",
     "Have you ever smurfed (used a lower-ranked account)?",
     "Have you ever seen an e-couple?",
@@ -98,7 +98,7 @@ const questions = [
     "Are you a Kevin Nguyen from Socal??",
     "Do you want to steal Kyedae from Tenz?",
     "If you are stuck in Iron do you have a disability?",
-   "Was Sinatraa innocent (yes save my boy Jay Won!)",
+   "Have you ever played Valorant in a gaming lounge",
 ];
 
 function createQuestions() {
